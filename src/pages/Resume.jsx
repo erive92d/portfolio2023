@@ -42,7 +42,8 @@ export default function Resume() {
                 <div className="text-center p-6">
 
                     <a
-                        href="https://docs.google.com/document/d/1pch-mCKIKW-K7kF4qxVOMj_KkFnW41o4V9eL6vTm7aA/edit?usp=sharing"
+                        href="https://docs.google.com/document/d/1b47lmc6IJvSm-Whg1XgtxfpzUxCXRqK4AjSOjXWGkNU/edit?usp=sharing"
+                        
                         target="__blank"
                         className="bg-gray-600 text-white w-1/3 text-l p-3 flex flex-col justify-center mx-auto rounded"
                     >
