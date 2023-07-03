@@ -2,12 +2,12 @@ import family from "../utils/images/family.jpg"
 
 export default function About() {
     return (
-        <div id="#about" className="md:flex   text-gray-900  text-center">
+        <div id="#about" className="md:flex text-gray-900 text-center">
 
             <div className="w-full flex justify-center p-4">
-                <img src={family} className="rounded-full md:w-full w-1/2 border-4 border-white"></img>
+                <img src={family} className="rounded-full lg:w-1/2  w-1/2 lg:h-1/2 border-4 border-white"></img>
             </div>
-            <div className="bg-white rounded-md p-3 ">
+            <div className="bg-white rounded-md p-3">
                 <div className="p-2 ">
                     <h1 className="text-xl">Deorren Erive</h1>
                     <p className="italic font-light">Full-Stack Web Developer</p>

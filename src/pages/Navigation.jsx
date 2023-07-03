@@ -8,10 +8,10 @@ export default function Navigation() {
     };
     return (
 
-        <nav className="bg-gray-800">
+        <nav className="bg-gray-800 ">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-10">
-                    <div className="flex items-center">
+                <div className="flex items-center justify-between h-10  ">
+                    <div className="flex items-center lg:w-full lg:justify-between lg:text-xl">
                         <div className="flex-shrink-0">
                             <h1 className="text-white"><i class="fa-regular fa-gem"></i> </h1>
                         </div>
