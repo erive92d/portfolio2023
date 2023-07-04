@@ -20,9 +20,9 @@ export default function Projects() {
                                     <a href={project.git} target="_blank" className="  text-cyan-500 text-m " ><i class="fa-brands fa-github"></i></a>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center lg:flex-row lg:items-start">
+                            <div className="flex flex-col items-center lg:flex-row lg:items-start lg:justify-center">
 
-                            <img className="w-1/2 p-2 rounded-xl lg:h-80 md:h-60 lg:w-1/2" src={project.src}></img>
+                            <img className="w-1/2 p-2 rounded-xl lg:h-80 md:h-60 lg:w-1/3 h-60" src={project.src}></img>
                             <div className="p-3 text-center lg:space-y-10 lg:w-1/2">
                                 <p className="font-thin italic text-sm lg:text-lg">{project.description}</p>
                                 <p className="italic font-mono text-sm p-3">{project.tech}</p>
