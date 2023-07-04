@@ -7,7 +7,7 @@ export default function About() {
             <div className="w-full flex justify-center p-4">
                 <img src={family} className="rounded-full lg:w-1/2  w-1/2 lg:h-1/2 border-4 border-white"></img>
             </div>
-            <div className="p-3 text-white">
+            <div className="p-3 text-gray-300">
                 <div className="p-2">
                     <h1 className="text-xl">Deorren Erive</h1>
                     <p className="italic font-light">Full-Stack Web Developer</p>
