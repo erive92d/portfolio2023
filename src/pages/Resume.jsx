@@ -7,7 +7,7 @@ export default function Resume() {
         >
             <div className="resume">
                 <div className="space-y-6 flex flex-col items-end">
-                    <h1 className="bg-green-800 w-2/3 rounded-l-xl text-white p-6 text-2xl italic text-center"><i class="fa-regular fa-file"></i>  Resume</h1>
+                    <h1 className="bg-cyan-500 w-2/3 rounded-l-xl text-white p-6 text-2xl italic text-center"><i class="fa-regular fa-file"></i>  Resume</h1>
                     <div className="space-y-2">
                         <ul className=" text-gray-600 p-2 list-disc pl-1 text-center">
                             <li className="mb-2">

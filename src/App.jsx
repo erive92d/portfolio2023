@@ -13,7 +13,7 @@ import Footer from './pages/Footer'
 function App() {
 
   return (
-    <div className=' bg-gray-200 min-h-screen'>
+    <div className=' bg-gray-800 min-h-screen'>
 
       <Navigation />
       <div className='space-y-10'>

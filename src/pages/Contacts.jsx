@@ -15,7 +15,7 @@ const Contact = () => {
 
     return (
         <div className='bg-gray-300' id="contact">
-            <h1 className='bg-blue-800 italic w-2/3 rounded-r-xl text-white text-center p-6 text-2xl'><i class="fa-regular fa-paper-plane"></i> Let's connect!</h1>
+            <h1 className='bg-cyan-500 italic w-2/3 rounded-r-xl text-white text-center p-6 text-2xl'><i class="fa-regular fa-paper-plane"></i> Let's connect!</h1>
             <form className="max-w-md mx-auto p-6" onSubmit={handleSubmit}>
                 <div className="mb-4">
                     <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="subject">
