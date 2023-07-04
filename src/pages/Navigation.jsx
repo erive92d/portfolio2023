@@ -8,12 +8,12 @@ export default function Navigation() {
     };
     return (
 
-        <nav className="bg-gray-800">
+        <nav className="bg-gray-800 border-b  border-b-cyan-500 ">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-10">
-                    <div className="flex items-center">
+                <div className="flex items-center justify-between h-20  ">
+                    <div className="flex items-center lg:w-full lg:justify-between lg:text-xl">
                         <div className="flex-shrink-0">
-                            <h1 className="text-white"><i class="fa-regular fa-gem"></i> </h1>
+                            <h1 className="text-cyan-500"><i class="fa-regular fa-gem"></i> </h1>
                         </div>
                         <div className="hidden md:block">
                             <div className="ml-10 flex items-baseline space-x-4">
@@ -57,7 +57,7 @@ export default function Navigation() {
                             onClick={toggleMenu}
                         >
                             <svg
-                                className="block h-6 w-6"
+                                className="block h-6 w-6 text-cyan-500"
                                 stroke="currentColor"
                                 fill="none"
                                 viewBox="0 0 24 24"
@@ -82,29 +82,29 @@ export default function Navigation() {
                 </div>
             </div>
             <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
-                <div className="px-2 pt-2 pb-3 sm:px-3">
+                <div className="px-2 pt-2 pb-3 sm:px-3 ">
                     <a
                         href="#about"
-                        className="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                        className="text-cyan-500 block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium"
                     >
-                        <i class="fa-solid fa-house"></i> Home
+                        <i class="fa-solid fa-house "></i> Home
                     </a>
 
                     <a
                         href="#projects"
-                        className="mt-1 block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                        className="text-cyan-500 mt-1 block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium"
                     >
                         <i class="fa-solid fa-screwdriver-wrench"></i> Projects
                     </a>
                     <a
                         href="#contact"
-                        className="mt-1 block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                        className="text-cyan-500 mt-1 block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium"
                     >
                         <i class="fa-regular fa-paper-plane"></i> Contact
                     </a>
                     <a
                         href="#resume"
-                        className="mt-1 block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                        className="text-cyan-500 mt-1 block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium"
                     >
                         <i class="fa-regular fa-file"></i> Resume
                     </a>
