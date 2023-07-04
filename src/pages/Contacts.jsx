@@ -16,7 +16,7 @@ const Contact = () => {
     return (
         <div className='border-b border-b-cyan-500 py-10' id="contact">
             <h1 className=' font-bold w-full rounded-r-xl text-white text-center p-6 text-2xl'><i class="fa-regular fa-paper-plane"></i> Let's connect!</h1>
-            <form className="max-w-md mx-auto p-6" onSubmit={handleSubmit}>
+            <form className="max-w-md mx-auto p-6 lg:max-w-2xl " onSubmit={handleSubmit}>
                 <div className="mb-4">
                     <label className="block text-white text-sm font-bold mb-2" htmlFor="subject">
                         Subject
@@ -29,12 +29,12 @@ const Contact = () => {
                         onChange={(e) => setSubject(e.target.value)}
                     />
                 </div>
-                <div className="mb-6">
+                <div className="mb-6 lg:h-50 h-50">
                     <label className="block text-white text-sm font-bold mb-2" htmlFor="body">
                         Body
                     </label>
                     <textarea
-                        className="shadow appearance-none border  w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        className="h-40 lg:h-40 shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         id="body"
                         value={body}
                         onChange={(e) => setBody(e.target.value)}
