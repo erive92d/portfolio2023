@@ -13,14 +13,15 @@ import Footer from './pages/Footer'
 function App() {
 
   return (
-    <div className=' bg-gray-800 min-h-screen'>
+    <div className=' bg-gray-900 min-h-screen'>
 
       <Navigation />
-      <div className='space-y-10'>
+      <div className='space-y-10 lg:p-10 md:p-10'>
         <About />
         <Projects />
-        <Contact />
         <Resume />
+        <Contact />
+        
       </div>
       <Footer />
     </div>

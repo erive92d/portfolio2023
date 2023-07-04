@@ -5,11 +5,11 @@ export default function Resume() {
             className=""
             id="resume"
         >
-            <div className="resume">
-                <div className="space-y-6 flex flex-col items-end">
+            <div className="resume space-y-5">
+                <div className="space-y-6 flex flex-col">
                     <h1 className="w-full rounded-l-xl text-white p-6 text-2xl font-bold text-center"><i class="fa-regular fa-file"></i>  Resume</h1>
                     <div className="space-y-2">
-                        <ul className=" text-gray-300 p-2 list-disc pl-1 text-center">
+                        <ul className="lg:space-y-20 text-gray-300 p-2 text-center  ">
                             <li className="mb-2">
                                 Developed and maintained multiple websites and web applications
                                 using HTML, CSS, Javascript, React, MongoDB, and MySQL.
