@@ -1,13 +1,12 @@
 import projects from "../utils/projects"
 
 export default function Projects() {
-    console.log(projects)
 
 
 
     return (
         <div id="projects" className="flex flex-col items-start">
-            <h1 className="font-bold text-2xl border-b border-b-cyan-500 w-full rounded text-white text-center py-6 "><i class="fa-solid fa-screwdriver-wrench"></i> Works </h1>
+            <h1 className="font-bold text-2xl border-b border-b-cyan-500 w-full rounded text-white text-center py-6 "><i class="fa-solid fa-screwdriver-wrench"></i> Projects </h1>
             <div>
                 {projects.map((project) => {
                     return (
@@ -22,14 +21,14 @@ export default function Projects() {
                             </div>
                             <div className="flex flex-col items-center lg:flex-row lg:items-start">
 
-                            <img className="w-1/2 p-2 rounded-xl lg:h-80 md:h-60 lg:w-1/2" src={project.src}></img>
-                            <div className="p-3 text-center lg:space-y-10 lg:w-1/2">
-                                <p className="font-thin italic text-sm lg:text-lg">{project.description}</p>
-                                <p className="italic font-mono text-sm p-3">{project.tech}</p>
+                                <img className="w-2/3 p-2 rounded-xl lg:h-80 md:h-60 lg:w-1/2" src={project.src}></img>
+                                <div className="p-3 text-center lg:space-y-10 lg:w-1/2">
+                                    <p className="font-thin italic text-sm lg:text-lg">{project.description}</p>
+                                    <p className="italic font-mono text-sm p-3">{project.tech}</p>
+                                </div>
+
                             </div>
-                            
-                            </div>
-                            
+
                         </div>
                     )
                 })}
