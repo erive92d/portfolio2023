@@ -3,26 +3,52 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './pages/Home'
-import Navigation from './pages/Navigation'
-import About from './pages/About'
-import Projects from './pages/Projects'
-import Contact from './pages/Contacts'
-import Resume from './pages/Resume'
-import Footer from './pages/Footer'
 
+import Footer from './pages/Footer'
+import AboutNew from './pages/About'
+import Navigation from './components/Navigation'
+import Logo from './components/Logo'
+import { capTitle } from './utils/helpers'
 function App() {
+  const [page, setPage] = useState("about")
+
+  const handlePage = (e) => {
+    e.preventDefault()
+    const { name } = e.target
+
+    if (name === "about") {
+      setPage("about")
+    }
+    if (name === "projects") {
+      setPage("projects")
+    }
+    if (name === "contacts") {
+      setPage("contacts")
+    }
+    if (name === "resume") {
+      setPage("resume")
+    }
+
+
+  }
+
+
+
+  document.title = "D.E: " + capTitle(page)
 
   return (
-    <div className=' bg-gray-900 min-h-screen'>
+    <div className='bg-gradient-to-b from-black to-cyan-700 '>
+      <Logo />
 
-      <Navigation />
-      <div className='space-y-10 lg:p-10 md:p-10'>
-        <About />
-        <Projects />
-        <Resume />
-        <Contact />
-        
+      <div className='flex min-h-screen'>
+        <Navigation handlePage={handlePage} page={page} />
+        <div className=' p-3 lg:p-10 md:p-2  mx-auto'>
+          <Home page={page} />
+
+        </div>
+
       </div>
+
       <Footer />
     </div>
   )

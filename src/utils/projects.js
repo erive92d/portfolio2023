@@ -1,11 +1,11 @@
 const projectData = [
   {
-    title: "Budgetly",
-    src: "./budgetly.jpeg",
-    description: "A budget app that is designed to help you take control of your finances and make smarter spending decisions. Whether you're looking to create a budget, track your expenses, or save for specific goals, we've got you covered.",
-    git: "https://github.com/erive92d/Budget-Application",
-    link: "https://budget-app-nodejs.herokuapp.com/",
-    tech: "HTML, CSS, JS, NodeJs, Express, Mysql"
+    title: "iSocial",
+    src: "./isocial.png",
+    description: "If Facebook and iMessage had a baby!",
+    git: "https://github.com/erive92d/isocial-react",
+    link: "https://isocial-react-51666780eade.herokuapp.com/",
+    tech: "React, Vite, NodeJs, Express, MongoDB, REST"
   },
   {
     title: "Sahara E-commerce",

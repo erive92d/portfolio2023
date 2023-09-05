@@ -5,9 +5,9 @@ export default function Resume() {
             className=""
             id="resume"
         >
-            <div className="resume space-y-5">
+            <div className=" space-y-2">
                 <div className="space-y-6 flex flex-col">
-                    <h1 className="w-full rounded-l-xl text-white p-6 text-2xl font-bold text-center"><i class="fa-regular fa-file"></i>  Resume</h1>
+                    <h1 className="w-full rounded-l-xl text-white p-2 text-2xl font-bold text-center"><i class="fa-regular fa-file"></i>  Resume</h1>
                     <div className="space-y-2">
                         <ul className="lg:space-y-20 text-gray-300 p-2 text-center  ">
                             <li className="mb-2">
@@ -43,7 +43,7 @@ export default function Resume() {
 
                     <a
                         href="https://docs.google.com/document/d/1b47lmc6IJvSm-Whg1XgtxfpzUxCXRqK4AjSOjXWGkNU/edit?usp=sharing"
-                        
+
                         target="__blank"
                         className="bg-cyan-500 text-white w-1/3 text-l p-3 flex flex-col justify-center mx-auto rounded"
                     >
