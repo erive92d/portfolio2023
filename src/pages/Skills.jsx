@@ -3,7 +3,8 @@ import {SiTypescript} from 'react-icons/si'
 import {IoLogoJavascript, IoLogoCss3, IoLogoReact} from 'react-icons/io5'
 import {FaHtml5} from 'react-icons/fa'
 import {BiLogoMongodb} from 'react-icons/bi'
-
+import { motion } from 'framer-motion'
+import { fadeInAnimationVariants } from '../utils/helpers'
 export default function Skills() {
 
   const items = [
@@ -40,16 +41,23 @@ export default function Skills() {
 
   ]
 
+ 
+
   return (
     <div id="skills" className=" flex flex-col bg-black  p-2 rounded">
         <h1 className="font-bold text-2xl border-b border-b-cyan-500 w-full rounded text-white text-center py-6 "><i className="fa-solid fa-screwdriver-wrench"></i> Skills </h1>
         <div className='flex flex-wrap justify-around p-3'>
           {items.map((item, index) => (
-              <div key={index} className={`flex flex-col glass ${item.color} bg-gray-700 rounded-full p-4 items-center justify-center w-1/4 m-3 lg:w-1/5 lg:p-10`}>
+              <motion.div
+              variants={fadeInAnimationVariants}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true}}
+              custom={index}
+              key={index} className={`flex flex-col glass ${item.color} bg-gray-700 rounded-full p-4 items-center justify-center w-1/4 m-3 lg:w-1/5 lg:p-10 hover:scale-110 duration-100 hover:shadow-xl hover:shadow-cyan-500`}>
                 <p className='text-5xl'>{item.icon}</p>
                 <p className='font-thin'>{item.title}</p>
-              </div>
-
+              </motion.div>
           ))}
         </div>
        
