@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-
+import { motion, useScroll } from 'framer-motion';
 const Contact = () => {
     const [subject, setSubject] = useState('');
     const [body, setBody] = useState('');
-
     const handleSubmit = (e) => {
+
         e.preventDefault();
         const email = 'erive92d@gmail.com';
         const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
@@ -14,7 +14,10 @@ const Contact = () => {
     };
 
     return (
-        <div className='border-b border-b-cyan-500 py-10  md:w-full md:flex' id="contact">
+        <motion.div 
+        initial={{ x: 100}}
+        whileInView={{x: 1}}
+        className='border-b border-b-cyan-500 py-10  md:w-full md:flex' id="contact">
             <h1 className=' font-bold w-full rounded-r-xl text-white text-center p-6 text-2xl'><i class="fa-regular fa-paper-plane"></i> Let's connect!</h1>
             <form className="max-w-md md:w-screen md:p-2 mx-auto  p-6 lg:max-w-2xl " onSubmit={handleSubmit}>
                 <div className="mb-4">
@@ -49,7 +52,7 @@ const Contact = () => {
                     </button>
                 </div>
             </form>
-        </div>
+        </motion.div>
 
     );
 };
