@@ -1,8 +1,15 @@
 import family from "../utils/images/family.jpg"
-
+import { motion } from "framer-motion"
+import { useRef } from "react"
 export default function AboutNew() {
+    
     return (
-        <div id="#about" className=" md:flex md:flex-col text-gray-900 text-center p-3 lg:space-x-20 lg:flex lg:flex-row lg:text-xl lg:justify-center">
+        <motion.div 
+        id="#about"
+        initial={{  scale: 0.2 }}
+        whileInView={{  scale: 1.0}}
+        // viewport={{ once: true }}
+        className=" md:flex md:flex-col text-gray-900 text-center p-3 lg:space-x-20 lg:flex lg:flex-row lg:text-xl lg:justify-center">
 
             <div className="w-full lg:w-1/3 p-4 flex justify-center">
                 <img src={family} className="rounded-full lg:w-full  w-1/2 border-4 border-white"></img>
@@ -23,6 +30,6 @@ export default function AboutNew() {
 
             </div>
 
-        </div >
+        </motion.div >
     )
 }

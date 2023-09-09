@@ -1,7 +1,11 @@
+import { motion } from "framer-motion";
 
 export default function Resume() {
     return (
-        <div
+        <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        delay={2}
             className=""
             id="resume"
         >
@@ -51,6 +55,6 @@ export default function Resume() {
                     </a>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
