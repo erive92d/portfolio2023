@@ -1,9 +1,8 @@
-import { useState } from "react"
 import AboutNew from "./About"
 import Projects from "./Projects"
 import Contact from "./Contacts"
-import Resume from "./Resume"
-export default function Home({ page }) {
+import Skills from "./Skills"
+export default function Home() {
     // if (page === "about") {
     //     return <AboutNew/>
     // }
@@ -18,9 +17,12 @@ export default function Home({ page }) {
     // }
 
     return (
-        <div className="flex flex-col space-y-10">
+        <div className="flex flex-col space-y-10 lg:w-2/3 lg:mx-auto">
             <div>
                 <AboutNew />
+            </div>
+            <div>
+                <Skills/>
             </div>
             <div>
                 <Projects />
@@ -28,9 +30,7 @@ export default function Home({ page }) {
             <div>
                 <Contact />
             </div>
-            <div>
-                <Resume />
-            </div>
+           
         </div>
     )
 

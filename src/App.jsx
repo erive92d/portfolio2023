@@ -1,12 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './pages/Home'
 import Footer from './pages/Footer'
-import AboutNew from './pages/About'
 import Navigation from './components/Navigation'
-import Logo from './components/Logo'
 import { capTitle } from './utils/helpers'
 function App() {
   const [page, setPage] = useState("about")
