@@ -37,9 +37,8 @@ function App() {
   document.title = "D.E: " + capTitle(page)
 
   return (
-    <div className='bg-gradient-to-b from-black to-cyan-700 '>
+    <div className='min-h-screen bg-gray-300'>
       <Logo />
-
       <div className='flex min-h-screen'>
         <Navigation handlePage={handlePage} page={page} />
         <div className=' p-3 lg:p-10 md:p-2  mx-auto'>
