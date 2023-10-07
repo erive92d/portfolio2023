@@ -15,7 +15,7 @@ const Contact = () => {
 
     return (
         <motion.div
-            className='  md:w-full md:flex lg:flex-col' id="contact">
+            className='  md:w-full md:flex-col lg:flex-col' id="contact">
             <h1 className=' font-bold w-full  text-center p-6 text-2xl'><i className="fa-regular fa-paper-plane"></i> Connect!</h1>
             <form className="max-w-md md:w-screen md:p-2 mx-auto  p-6 lg:max-w-2xl " onSubmit={handleSubmit}>
                 <div className="mb-4">
@@ -23,7 +23,7 @@ const Contact = () => {
                         Subject
                     </label>
                     <input
-                        className="shadow textarea textarea-primary appearance-none border  w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
+                        className="shadow textarea bg-gray-500 appearance-none border  w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                         id="subject"
                         type="text"
                         value={subject}
@@ -35,7 +35,7 @@ const Contact = () => {
                         Body
                     </label>
                     <textarea
-                        className="h-40 textarea textarea-primary lg:h-40 shadow appearance-none border w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
+                        className="h-40 textarea bg-gray-500  lg:h-40 shadow appearance-none border w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                         id="body"
                         value={body}
                         onChange={(e) => setBody(e.target.value)}
