@@ -23,11 +23,11 @@ const CarouselComp = ({ projects }) => {
     };
 
     return (
-        <div className="flex justify-center relative flex-col items-center p-5">
+        <div className="flex justify-center  relative flex-col items-center p-5">
             <AnimatePresence mode="wait">
                 <motion.div
                     key={currentIndex}
-                    className="bg-white shadow-lg"
+                    className="bg-gray-900 shadow-lg"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}

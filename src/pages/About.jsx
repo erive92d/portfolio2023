@@ -9,7 +9,7 @@ export default function AboutNew() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             // viewport={{ once: true }}
-            className="h-screen bg-gradient-to-b from-gray-400 to-gray-300 flex flex-col justify-center items-center text-center p-3 lg:space-x-20 lg:p-0 lg:flex lg:flex-row lg:text-xl ">
+            className="h-screen flex flex-col justify-center items-center text-center p-3 lg:space-x-20 lg:p-0 lg:flex lg:flex-row lg:text-xl ">
 
             <div className="w-full lg:w-1/2 p-4 flex justify-center">
                 <img src={family} className="rounded-full lg:w-4/5  w-1/2 border-4 border-white"></img>
