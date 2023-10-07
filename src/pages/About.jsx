@@ -14,7 +14,7 @@ export default function AboutNew() {
             <div className="w-full lg:w-1/2 p-4 flex justify-center">
                 <img src={family} className="rounded-full lg:w-4/5  w-1/2 border-4 border-white"></img>
             </div>
-            <div className="p-3 lg:p-5 lg:text-lg lg:w-1/2 md:text-lg md:p-5 md:space-y-10 text-gray-300 lg:space-y-10">
+            <div className="p-3 lg:p-1 lg:text-lg lg:w-1/2 md:text-lg md:p-5 md:space-y-10 text-gray-300 lg:space-y-10">
                 <div className="">
                     <h1 className="text-2xl font-bold">Deorren Erive</h1>
                     <p className="italic font-light">Full-Stack Web Developer</p>

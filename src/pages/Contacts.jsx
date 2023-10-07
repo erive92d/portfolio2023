@@ -23,7 +23,7 @@ const Contact = () => {
                         Subject
                     </label>
                     <input
-                        className="shadow appearance-none border  w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        className="shadow appearance-none border  w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                         id="subject"
                         type="text"
                         value={subject}
@@ -35,7 +35,7 @@ const Contact = () => {
                         Body
                     </label>
                     <textarea
-                        className="h-40 lg:h-40 shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        className="h-40 lg:h-40 shadow appearance-none border w-full py-2 px-3 leading-tight focus:outline-none text-white focus:shadow-outline"
                         id="body"
                         value={body}
                         onChange={(e) => setBody(e.target.value)}

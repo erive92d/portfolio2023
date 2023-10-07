@@ -23,7 +23,7 @@ export default function Projects() {
                         // initial={{opacity:0}}
                         // whileInView={{ opacity: 1}}
                         className="text-gray-300  my-2 space-y-1 flex rounded flex-col  items-between lg:flex-col lg:p-2 lg:w-1/2">
-                          <div className="lg:m-2 lg:shadow-lg lg:shadow-cyan-500  lg:h-96">
+                          <div className="lg:m-2 lg:shadow-lg lg:shadow-cyan-500  lg:h-96 lg:hover:scale-105 duration-200">
                             <div className="flex w-full justify-between  p-2 text-white ">
                                     <h1 className="text-lg text-cyan-500 p-2 rounded italic lg:text-2xl">{project.title}</h1>
                                     <div className="space-x-3 text-lg flex items-center">
