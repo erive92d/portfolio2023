@@ -3,7 +3,7 @@
 const Navigation = () => {
 
     return (
-        <div className="navbar flex justify-between bg-base-300 text-gray-300">
+        <div className="navbar flex justify-between bg-gray-700 text-gray-300">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

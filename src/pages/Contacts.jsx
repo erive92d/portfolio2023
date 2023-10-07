@@ -43,7 +43,7 @@ const Contact = () => {
                 </div>
                 <div className="flex justify-center">
                     <button
-                        className="btn text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        className="btn btn-success text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                         type="submit"
                     >
                         Send

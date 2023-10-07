@@ -10,27 +10,30 @@ export default function Projects() {
         <motion.div
             id="projects" className="flex flex-col items-center">
             <h1 className="font-bold text-2xl w-full rounded text-center py-6 "><i className="fa-solid fa-screwdriver-wrench"></i> Projects </h1>
-                <div className="lg:flex lg:flex-wrap">
-                    {projects.map((project, index) => (
-                        <motion.div key={index}
+            <div className="lg:flex lg:flex-wrap">
+                {projects.map((project, index) => (
+                    <motion.div key={index}
                         variants={fadeInAnimationVariants}
                         initial="initial"
                         whileInView="animate"
                         viewport={{ once: true }}
                         custom={index}
-                        className="card w-96 lg:w-1/4 my-2 bg-base-100 ">   
+                        className="card w-96 lg:w-2/4 ">
+                        <div className="lg:m-2 my-2 rounded-xl bg-gray-600">
                             <figure className="px-10 pt-10">
-                            <img src={project.src} alt="pic" className="rounded-xl h-96 w-96" />
+                                <img src={project.src} alt="pic" className="rounded-xl h-96 w-96" />
                             </figure>
                             <div className="flex flex-col items-center">
                                 <h2 className="card-title">{project.title}</h2>
                                 <CollapseComp details={project} />
                             </div>
-                        
+                        </div>
+
+
                     </motion.div>
-                    ))}
-                </div>
-               
+                ))}
+            </div>
+
         </motion.div>
     )
 }
