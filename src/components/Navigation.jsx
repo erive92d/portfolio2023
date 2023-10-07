@@ -3,7 +3,7 @@
 const Navigation = () => {
 
     return (
-        <div className="navbar flex justify-between bg-gradient-to-b from-purple-800 to-gray-900 text-gray-300">
+        <div className="navbar flex justify-between bg-base-300 text-gray-300">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -16,7 +16,7 @@ const Navigation = () => {
                         <li><a href="#skills">Skills</a></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">Deorren</a>
+                <a className="btn btn-ghost normal-case text-xl">Deorren E.</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

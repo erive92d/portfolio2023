@@ -2,7 +2,8 @@ const projectData = [
   {
     title: "MovieTS",
     src: "./movie.png",
-    description: " Movie app that uses Typescript, React, TailwindCSS",
+    description:
+      " Welcome to my movie website, where cinema enthusiasts can explore a vast collection of movies and TV shows. Powered by TypeScript and React with the sleek design of DaisyUI, our user-friendly platform allows you to search for your favorite films and TV series effortlessly. Additionally, you can save your must-watch picks to your local storage for convenient access later. Dive into the world of entertainment with ease, only on our movie website.",
     git: "https://github.com/erive92d/movie-ts",
     link: "https://movie-ts-psi.vercel.app/",
     tech: "React, Vite, Typescript, TailwindCSS",
@@ -32,7 +33,7 @@ const projectData = [
       "Hitched is an engaged couple's personalized wedding hub. This web application acts as a concierege for their special day. It helps engaged couples manage their wedding with features for: Guest RSVP and add food allergies Wedding Date Information Social Media Page Specialized Navigation Based on Wedding Party",
     git: "https://github.com/AdMarom/Final-Project",
     link: "https://hitched.herokuapp.com/",
-    tech: "React, NodeJs, Express, MongoDB, Bootstrap",
+    tech: "React, NodeJs, Express, MongoDB",
   },
 ];
 

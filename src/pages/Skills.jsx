@@ -46,7 +46,7 @@ export default function Skills() {
   return (
     <div id="skills" className=" flex flex-col ">
       <h1 className="font-bold text-2xl w-full  text-center py-6 "><i className="fa-solid fa-screwdriver-wrench"></i> Skills </h1>
-      <div className='flex flex-wrap justify-around p-3'>
+      <div className='flex flex-wrap  justify-around p-3'>
         {items.map((item, index) => (
           <motion.div
             variants={fadeInAnimationVariants}
