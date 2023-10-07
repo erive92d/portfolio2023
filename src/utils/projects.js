@@ -1,8 +1,8 @@
 const projectData = [
   {
     title: "MovieTS",
-    src: "./moviets.png",
-    description: "Movie app that uses Typescript, React, TailwindCSS",
+    src: "./movie.png",
+    description: " Movie app that uses Typescript, React, TailwindCSS",
     git: "https://github.com/erive92d/movie-ts",
     link: "https://movie-ts-psi.vercel.app/",
     tech: "React, Vite, Typescript, TailwindCSS",

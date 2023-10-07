@@ -14,16 +14,16 @@ const Contact = () => {
     };
 
     return (
-        <motion.div 
-        className='border-b border-b-cyan-500 py-10  md:w-full md:flex' id="contact">
-            <h1 className=' font-bold w-full rounded-r-xl text-white text-center p-6 text-2xl'><i className="fa-regular fa-paper-plane"></i> Connect!</h1>
+        <motion.div
+            className='  md:w-full md:flex lg:flex-col' id="contact">
+            <h1 className=' font-bold w-full  text-center p-6 text-2xl'><i className="fa-regular fa-paper-plane"></i> Connect!</h1>
             <form className="max-w-md md:w-screen md:p-2 mx-auto  p-6 lg:max-w-2xl " onSubmit={handleSubmit}>
                 <div className="mb-4">
                     <label className="block text-white text-sm font-bold mb-2" htmlFor="subject">
                         Subject
                     </label>
                     <input
-                        className="shadow appearance-none border  w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+                        className="shadow textarea textarea-primary appearance-none border  w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                         id="subject"
                         type="text"
                         value={subject}
@@ -35,7 +35,7 @@ const Contact = () => {
                         Body
                     </label>
                     <textarea
-                        className="h-40 lg:h-40 shadow appearance-none border w-full py-2 px-3 leading-tight focus:outline-none text-white focus:shadow-outline"
+                        className="h-40 textarea textarea-primary lg:h-40 shadow appearance-none border w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
                         id="body"
                         value={body}
                         onChange={(e) => setBody(e.target.value)}
@@ -43,7 +43,7 @@ const Contact = () => {
                 </div>
                 <div className="flex justify-center">
                     <button
-                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        className="btn text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                         type="submit"
                     >
                         Send

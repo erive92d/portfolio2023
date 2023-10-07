@@ -32,10 +32,10 @@ function App() {
   document.title = "D.E: " + capTitle(page)
 
   return (
-    <div className='bg-black'>
+    <div className='bg-gradient-to-br from-gray-900 to-gray-800 text-gray-300'>
       <div className='flex min-h-screen flex-col'>
         <Navigation handlePage={handlePage} page={page} />
-        <div className=' p-3 lg:p-10 md:p-2  mx-auto'>
+        <div className='lg:w-2/3 mx-auto'>
           <Home page={page} />
         </div>
       </div>

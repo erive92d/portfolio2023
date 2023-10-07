@@ -17,12 +17,12 @@ export default function Home() {
     // }
 
     return (
-        <div className="flex flex-col space-y-10 lg:w-2/3 lg:mx-auto">
+        <div className="flex flex-col space-y-10">
             <div>
                 <AboutNew />
             </div>
             <div>
-                <Skills/>
+                <Skills />
             </div>
             <div>
                 <Projects />
@@ -30,7 +30,7 @@ export default function Home() {
             <div>
                 <Contact />
             </div>
-           
+
         </div>
     )
 

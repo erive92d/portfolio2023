@@ -1,52 +1,19 @@
 import projects from "../utils/projects"
-import { motion} from "framer-motion"
+import { motion } from "framer-motion"
 import { fadeInAnimationVariants } from "../utils/helpers"
+import CarouselComp from "../components/Carousel"
 
 export default function Projects() {
 
-    
+
 
     return (
-        <motion.div 
-        id="projects" className="flex flex-col items-start bg-black">
-            <h1 className="font-bold text-2xl border-b border-b-cyan-500 w-full rounded text-white text-center py-6 "><i className="fa-solid fa-screwdriver-wrench"></i> Projects </h1>
-            <div className="lg:flex lg:flex-wrap">
-                {projects.map((project, index) => 
-                     (
-                    <motion.div  key={index}
-                    variants={fadeInAnimationVariants}
-                    initial="initial"
-                    whileInView="animate"
-                    // viewport={{ once: true}}
-                    custom={index}
-                        // onViewportEnter={{opacity: 0}}
-                        // initial={{opacity:0}}
-                        // whileInView={{ opacity: 1}}
-                        className="text-gray-300  my-2 space-y-1 flex rounded flex-col  items-between lg:flex-col lg:p-2 lg:w-1/2">
-                          <div className="lg:m-2 lg:shadow-lg lg:shadow-cyan-500  lg:h-96 lg:hover:scale-105 duration-200">
-                            <div className="flex w-full justify-between  p-2 text-white ">
-                                    <h1 className="text-lg text-cyan-500 p-2 rounded italic lg:text-2xl">{project.title}</h1>
-                                    <div className="space-x-3 text-lg flex items-center">
-                                        <a href={project.link} target="_blank" className=" text-cyan-500 text-m " rel="noreferrer">Live</a>
+        <motion.div
+            id="projects" className="flex flex-col items-start  ">
+            <h1 className="font-bold text-2xl w-full rounded text-center py-6 "><i className="fa-solid fa-screwdriver-wrench"></i> Projects </h1>
+            <div className=" lg:flex lg:flex-wrap">
+                {projects && <CarouselComp projects={projects} />}
 
-                                        <a href={project.git} target="_blank" className="  text-cyan-500 text-m " rel="noreferrer" ><i className="fa-brands fa-github"></i></a>
-                                    </div>
-                                </div>
-                                <div className="flex flex-col items-center lg:flex-row lg:items-start lg:justify-center">
-                                    
-                                    <img className="w-2/3 h-37 p-2 rounded-xl lg:h-60 md:h-60 lg:w-1/3" src={project.src}></img>
-                                    <div className="p-3 text-center lg:space-y-2 lg:w-1/2">
-                                        <p className="font-thin italic text-sm lg:text-md">{project.description}</p>
-                                        <p className="italic font-mono text-sm p-3">{project.tech}</p>
-                                    </div>
-
-                                </div>
-                          </div>
-                           
-
-                    </motion.div>
-                    )
-                )}
             </div>
         </motion.div>
     )
