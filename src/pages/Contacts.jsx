@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 const Contact = () => {
     const [subject, setSubject] = useState('');
     const [body, setBody] = useState('');
-
     const handleSubmit = (e) => {
+
         e.preventDefault();
         const email = 'erive92d@gmail.com';
         const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
@@ -14,8 +14,9 @@ const Contact = () => {
     };
 
     return (
-        <div className='border-b border-b-cyan-500 py-10  md:w-full md:flex' id="contact">
-            <h1 className=' font-bold w-full rounded-r-xl text-white text-center p-6 text-2xl'><i class="fa-regular fa-paper-plane"></i> Let's connect!</h1>
+        <motion.div
+            className='bg-gradient-to-b from-gray-400 to-gray-300  md:w-full md:flex lg:flex-col' id="contact">
+            <h1 className=' font-bold w-full bg-yellow-300 text-white text-center p-6 text-2xl'><i className="fa-regular fa-paper-plane"></i> Connect!</h1>
             <form className="max-w-md md:w-screen md:p-2 mx-auto  p-6 lg:max-w-2xl " onSubmit={handleSubmit}>
                 <div className="mb-4">
                     <label className="block text-white text-sm font-bold mb-2" htmlFor="subject">
@@ -49,7 +50,7 @@ const Contact = () => {
                     </button>
                 </div>
             </form>
-        </div>
+        </motion.div>
 
     );
 };
