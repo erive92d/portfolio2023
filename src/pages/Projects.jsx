@@ -19,7 +19,7 @@ export default function Projects() {
                         viewport={{ once: true }}
                         custom={index}
                         className="card w-96 lg:w-2/4 ">
-                        <div className="lg:m-2 my-2 rounded-xl bg-gray-600">
+                        <div className="lg:m-2 my-2 rounded-xl bg-gradient-to-b from-gray-800 to-transparent">
                             <figure className="px-10 pt-10">
                                 <img src={project.src} alt="pic" className="rounded-xl h-96 w-96" />
                             </figure>
