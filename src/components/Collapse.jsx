@@ -7,7 +7,7 @@ export default function CollapseComp({ details }) {
                 {/* <i class="fa-solid fa-angle-down"></i> */}
             </div>
             <div className="collapse-content">
-                <div className="flex gap-2">
+                <div className="flex gap-2 py-2">
                     <a href={details.link} target="__blank" className="btn btn-sm btn-success">Demo</a>
                     <a href={details.git} target="__blank" className="btn btn-sm btn-primary">Git</a>
 
