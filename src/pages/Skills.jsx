@@ -4,6 +4,8 @@ import { IoLogoJavascript, IoLogoCss3, IoLogoReact } from 'react-icons/io5'
 import { FaHtml5 } from 'react-icons/fa'
 import { BiLogoMongodb } from 'react-icons/bi'
 import { motion } from 'framer-motion'
+import { TbBrandNextjs } from "react-icons/tb";
+
 import { fadeInAnimationVariants } from '../utils/helpers'
 export default function Skills() {
 
@@ -38,6 +40,11 @@ export default function Skills() {
       title: "MongoDB",
       color: 'text-green-500'
     },
+    {
+      icon: <TbBrandNextjs/>,
+      title:"NextJS",
+      color:"text-gray-200"
+    }
 
   ]
 
