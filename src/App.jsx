@@ -33,7 +33,7 @@ function App() {
 
   return (
 
-    <div className='bg-gradient-to-br from-base-200 to-base-100 text-gray-300 font-mono'>
+    <div className='bg-black text-gray-300 font-mono'>
       <div className='flex min-h-screen flex-col'>
         <Navigation handlePage={handlePage} page={page} />
         <div className=' lg:w-2/3 mx-auto'>
