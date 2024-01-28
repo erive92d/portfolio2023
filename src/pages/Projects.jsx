@@ -18,13 +18,13 @@ export default function Projects() {
                         whileInView="animate"
                         viewport={{ once: true }}
                         custom={index}
-                        className="card w-96 lg:w-2/4 ">
-                        <div className="lg:m-2 my-2 rounded-xl bg-gradient-to-b from-gray-800 to-transparent">
-                            <figure className="px-10 pt-10">
-                                <img src={project.src} alt="pic" className="rounded-xl h-96 w-96" />
+                        className="card my-4 w-96 lg:w-2/4 ">
+                        <div className="lg:mx-2 my-2 py-4 ">
+                            <figure className="">
+                                <img src={project.src} alt="pic" className=" h-96 w-96" />
                             </figure>
-                            <div className="flex flex-col items-center">
-                                <h2 className="card-title">{project.title}</h2>
+                            <div className="flex flex-col items-center p-2">
+                                <h2 className="card-title text-2xl ">{project.title}</h2>
                                 <CollapseComp details={project} />
                             </div>
                         </div>
