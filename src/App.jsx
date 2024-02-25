@@ -33,10 +33,10 @@ function App() {
 
   return (
 
-    <div className='bg-black text-gray-300 font-mono'>
-      <div className='flex min-h-screen flex-col'>
+    <div className='bg-cyan-950 text-gray-300 font-mono'>
+      <div className='flex flex-col'>
         <Navigation handlePage={handlePage} page={page} />
-        <div className=' lg:w-2/3 mx-auto'>
+        <div className=' lg:w-5/6 lg:mx-auto'>
           <Home page={page} />
         </div>
       </div>
