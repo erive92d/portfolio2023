@@ -9,10 +9,10 @@ export default function AboutNew() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             // viewport={{ once: true }}
-            className="h-screen flex flex-col justify-center items-center text-center p-3 lg:space-x-20 lg:p-0 lg:flex lg:flex-row lg:text-xl ">
-            <div className="lg:flex ">
+            className="h-screen flex flex-col justify-center items-center text-center p-3 lg:space-x-20 lg:p-0 lg:flex-row lg:text-xl ">
+            <div className="lg:flex">
                 <div className="w-full lg:w-1/2 p-4 flex justify-center">
-                    <img src={family} className="rounded-full lg:w-4/5 lg:rounded-full  w-1/2"></img>
+                    <img src={family} className=" rounded-full lg:w-3/5 lg:rounded-full  w-1/2"></img>
                 </div>
                 <div className="p-3 lg:p-5 lg:text-lg lg:w-1/2 md:text-lg md:p-5 md:space-y-10  lg:space-y-10">
                     <div className="">
