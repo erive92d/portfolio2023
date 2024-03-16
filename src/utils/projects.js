@@ -1,5 +1,15 @@
 const projectData = [
   {
+    title: "Sangkap Recipe",
+    src: "./recipe.png",
+    description:
+      "Sangkap is a sleek recipe web app powered by Next.js and TypeScript, offering seamless user authentication with NextAuth.js. Explore a vast array of recipes, share your own creations, and connect with fellow food enthusiasts. Whether you're a chef or home cook, Recipeify makes culinary exploration easy and enjoyable."
+    ,
+    git: "https://github.com/erive92d/next-recipe",
+    link: "https://sangkapnxt.vercel.app/",
+    tech: "NextJs, Typescript, NextAuth, TailwindCSS",
+  },
+  {
     title: "MovieTS",
     src: "./movie.png",
     description:

@@ -4,13 +4,14 @@ import Home from './pages/Home'
 import Footer from './pages/Footer'
 import Navigation from './components/Navigation'
 import { capTitle } from './utils/helpers'
+
 function App() {
+  //about
   const [page, setPage] = useState("about")
 
   const handlePage = (e) => {
     e.preventDefault()
     const { name } = e.target
-
     if (name === "about") {
       setPage("about")
     }
@@ -23,16 +24,11 @@ function App() {
     if (name === "resume") {
       setPage("resume")
     }
-
-
   }
-
-
 
   document.title = "D.E: " + capTitle(page)
 
   return (
-
     <div className='bg-cyan-950 text-gray-300 font-mono'>
       <div className='flex flex-col'>
         <Navigation handlePage={handlePage} page={page} />
@@ -40,7 +36,6 @@ function App() {
           <Home page={page} />
         </div>
       </div>
-
       <Footer />
     </div>
   )
