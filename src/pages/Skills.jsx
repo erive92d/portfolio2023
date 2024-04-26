@@ -5,6 +5,8 @@ import { FaHtml5 } from 'react-icons/fa'
 import { BiLogoMongodb } from 'react-icons/bi'
 import { motion } from 'framer-motion'
 import { TbBrandNextjs } from "react-icons/tb";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiPrisma } from "react-icons/si";
 
 import { fadeInAnimationVariants } from '../utils/helpers'
 export default function Skills() {
@@ -41,9 +43,19 @@ export default function Skills() {
       color: 'text-green-500'
     },
     {
-      icon: <TbBrandNextjs/>,
-      title:"NextJS",
-      color:"text-gray-200"
+      icon: <TbBrandNextjs />,
+      title: "NextJS",
+      color: "text-black"
+    },
+    {
+      icon: <BiLogoPostgresql />,
+      title: "Postgres",
+      color: "text-blue-900"
+    },
+    {
+      icon: <SiPrisma />,
+      title: "Prisma",
+      color: "text-gray-200"
     }
 
   ]
@@ -51,9 +63,9 @@ export default function Skills() {
 
 
   return (
-    <div id="skills" className=" flex flex-col ">
-      <h1 className="font-bold text-2xl w-full  text-center py-6 "><i className="fa-solid fa-screwdriver-wrench"></i> Skills </h1>
-      <div className='flex flex-wrap  justify-around p-3'>
+    <div id="skills" className="min-h-screen">
+      <h1 className="font-bold text-2xl w-full lg:text-4xl text-center py-6 "><i className="fa-solid fa-screwdriver-wrench"></i> Skills </h1>
+      <div className='flex flex-wrap justify-center'>
         {items.map((item, index) => (
           <motion.div
             variants={fadeInAnimationVariants}
@@ -61,7 +73,7 @@ export default function Skills() {
             whileInView="animate"
             viewport={{ once: true }}
             custom={index}
-            key={index} className={`flex flex-col glass ${item.color} bg-gray-700 rounded-full p-4 items-center justify-center w-1/4 m-3 lg:w-1/5 lg:p-10 hover:scale-110 duration-100 hover:shadow-xl hover:shadow-cyan-500`}>
+            key={index} className={`w-40 flex flex-col glass ${item.color} bg-gray-700  p-4 items-center justify-center m-3 lg:w-1/5 lg:p-10 hover:scale-110 duration-100 hover:shadow-xl hover:shadow-cyan-500`}>
             <p className='text-5xl'>{item.icon}</p>
             <p className='font-thin'>{item.title}</p>
           </motion.div>
@@ -69,32 +81,6 @@ export default function Skills() {
       </div>
 
 
-      {/* <div className="flex flex-wrap p-2 justify-around">
-          <div className=''>
-            <FaHtml5 className='text-orange-500 text-5xl'/>
-            <p className='text-center'>HTML</p>
-          </div>
-          <div>
-            <IoLogoCss3 className='text-5xl text-blue-500'/>
-            <p className='text-center'>CSS</p>
-          </div>
-          <div>
-            <IoLogoJavascript className='text-5xl text-yellow-500'/>
-            <p className='text-center'>Javascript</p>
-          </div>
-          <div>
-            <SiTypescript className='text-5xl text-blue-500'/>
-            <p className='text-center'>Typescript</p>
-          </div>
-          <div>
-            <IoLogoReact className='text-5xl text-cyan-500'/>
-            <p className='text-center'>React</p>
-          </div>
-          <div>
-            <BiLogoMongodb className='text-5xl text-green-500'/>
-            <p className='text-center'>MongoDB</p>
-          </div>
-        </div> */}
 
     </div>
   )

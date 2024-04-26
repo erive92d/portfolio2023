@@ -26,15 +26,15 @@ const projectData = [
     link: "https://book-search-online.herokuapp.com/",
     tech: "React NodeJs, Express, Mysql",
   },
-  {
-    title: "Wedding hub",
-    src: "./wedding.png",
-    description:
-      "Hitched is an engaged couple's personalized wedding hub. This web application acts as a concierege for their special day. It helps engaged couples manage their wedding with features for: Guest RSVP and add food allergies Wedding Date Information Social Media Page Specialized Navigation Based on Wedding Party",
-    git: "https://github.com/AdMarom/Final-Project",
-    link: "https://hitched.herokuapp.com/",
-    tech: "React, NodeJs, Express, MongoDB",
-  },
+  // {
+  //   title: "Wedding hub",
+  //   src: "./wedding.png",
+  //   description:
+  //     "Hitched is an engaged couple's personalized wedding hub. This web application acts as a concierege for their special day. It helps engaged couples manage their wedding with features for: Guest RSVP and add food allergies Wedding Date Information Social Media Page Specialized Navigation Based on Wedding Party",
+  //   git: "https://github.com/AdMarom/Final-Project",
+  //   link: "https://hitched.herokuapp.com/",
+  //   tech: "React, NodeJs, Express, MongoDB",
+  // },
 ];
 
 export default projectData;
