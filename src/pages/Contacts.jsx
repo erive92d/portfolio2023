@@ -17,7 +17,7 @@ const Contact = () => {
         <motion.div
             className='min-h-screen flex flex-col justify-center items-center md:w-full md:flex-col lg:flex-col' id="contact">
             <h1 className='font-bold w-full  text-center p-6 text-4xl'><i className="fa-regular fa-paper-plane"></i> Connect!</h1>
-            <form className="w-96 md:w-96 md:p-2 p-6 lg:w-4/5 " onSubmit={handleSubmit}>
+            <form className="w-96 md:w-96 md:p-2 p-6 lg:w-4/6 " onSubmit={handleSubmit}>
                 <div className="mb-4">
                     <label className="block text-white text-sm font-bold mb-2" htmlFor="subject">
                         Subject

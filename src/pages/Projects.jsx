@@ -1,6 +1,5 @@
 import projects from "../utils/projects"
 import { motion } from "framer-motion"
-import CollapseComp from "../components/Collapse"
 import { fadeInAnimationVariants } from "../utils/helpers"
 export default function Projects() {
 
@@ -21,7 +20,7 @@ export default function Projects() {
                         className=" my-4 w-96 lg:w-full ">
                         <div className="flex flex-col lg:flex-row lg:justify-between gap-8   ">
                             <figure className="lg:w-1/3">
-                                <img src={project.src} alt="pic" className="rounded-full lg:rounded-none h-96 w-96 lg:w-full lg:h-80" />
+                                <img src={project.src} alt="pic" className=" h-96 w-96 lg:w-full lg:h-80" />
                             </figure>
                             <div className="flex flex-col lg:w-1/2 gap-8">
                                 <h2 className="text-3xl">{project.title}</h2>
