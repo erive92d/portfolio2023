@@ -29,10 +29,10 @@ function App() {
   document.title = "D.E: " + capTitle(page)
 
   return (
-    <div className='bg-cyan-950 text-gray-300 font-mono'>
+    <div className=' bg-gradient-to-b  text-white font-mono '>
       <div className='flex flex-col'>
         <Navigation handlePage={handlePage} page={page} />
-        <div className=' lg:w-5/6 lg:mx-auto'>
+        <div className=''>
           <Home page={page} />
         </div>
       </div>

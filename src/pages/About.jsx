@@ -9,7 +9,9 @@ export default function AboutNew() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             // viewport={{ once: true }}
-            className="min-h-screen flex flex-col justify-center items-center"
+            className="min-h-screen flex flex-col justify-center items-center
+             bg-gradient-to-b from-20% to-50%  from-cyan-700 to-black"
+
         >
             <div className="px-4 flex flex-col lg:flex-row gap-10 justify-around lg:items-center  ">
                 <div className="lg:w-1/4">
