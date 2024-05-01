@@ -2,6 +2,8 @@
 import { motion } from "framer-motion"
 export default function AboutNew() {
 
+    const biograpy = " Hello! My name is Deorren, and I'm a Full-Stack Web Developer based in San Francisco, Bay Area. I have a passion for developing dynamic and engaging web applications using the latest technologies and tools. When I'm not coding, I enjoy staying active and spending time outdoors. I'm an avid basketball player and love to hit the court whenever I can. I also enjoy riding my mountain bike and exploring the beautiful trails in my area."
+
     return (
         <motion.div
             id="#about"
@@ -18,12 +20,16 @@ export default function AboutNew() {
                     <p className="italic font-light">Full-Stack Web Developer</p>
                 </div>
                 <div className="lg:w-1/3 ">
-                    <p className="font-thin">
-                        Hello! My name is Deorren, and I'm a <span>Full-Stack Web Developer</span> based in San Francisco, Bay Area. I have a passion for developing dynamic and engaging web applications using the latest technologies and tools.
-                        When I'm not coding, I enjoy staying active and spending time outdoors. I'm an avid basketball player and love to hit the court whenever I can. I also enjoy riding my mountain bike and exploring the beautiful trails in my area.
-                        {/* But above all else, my family is the most important thing in my life. My wife and I have been married for 3 years, and we have a wonderful one-year-old son who keeps us on our toes. */}
-
-                    </p>
+                    {biograpy.split('').map((char, index) => (
+                        <motion.span
+                            key={index}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: index * 0.01 }}
+                        >
+                            {char}
+                        </motion.span>
+                    ))}
                 </div>
             </div>
 
