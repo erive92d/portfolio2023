@@ -1,16 +1,12 @@
 import AboutNew from "./About"
-import Projects from "./Projects"
-import Contact from "./Contacts"
-import Skills from "./Skills"
+
 export default function Home() {
 
+ 
 
     return (
-        <div className="flex flex-col space-y-10">
-            <AboutNew />
-            <Skills />
-            <Projects />
-            <Contact />
+        <div className="bg-gradient-to-b from-cyan-700 to-black from-30% to-60% flex flex-col space-y-10">
+
         </div>
     )
 

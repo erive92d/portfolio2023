@@ -63,7 +63,7 @@ export default function Skills() {
 
 
   return (
-    <div id="skills" className="min-h-screen">
+    <div id="skills" className="min-h-screen flex flex-col justify-center items-center">
       <h1 className="font-bold text-2xl w-full lg:text-4xl text-center py-6 "><i className="fa-solid fa-screwdriver-wrench"></i> Skills </h1>
       <div className='flex flex-wrap justify-center'>
         {items.map((item, index) => (
@@ -73,7 +73,7 @@ export default function Skills() {
             whileInView="animate"
             viewport={{ once: true }}
             custom={index}
-            key={index} className={`w-40 flex flex-col glass ${item.color} bg-gray-700  p-4 items-center justify-center m-3 lg:w-1/5 lg:p-10 hover:scale-110 duration-100 hover:shadow-xl hover:shadow-cyan-500`}>
+            key={index} className={`w-1/3 flex flex-col glass ${item.color} bg-gray-700  p-4 items-center justify-center m-3 lg:w-1/5 lg:p-10 hover:scale-110 duration-100 hover:shadow-xl hover:shadow-cyan-500`}>
             <p className='text-5xl'>{item.icon}</p>
             <p className='font-thin'>{item.title}</p>
           </motion.div>
