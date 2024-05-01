@@ -7,7 +7,7 @@ export default function Projects() {
 
     return (
         <motion.div
-            id="projects" className="min-h-screen flex flex-col lg:gap-14  items-center">
+            id="projects" className="min-h-screen flex flex-col lg:gap-14 px-10  items-center">
             <h1 className="font-bold text-2xl lg:text-4xl w-full rounded text-center py-6"><i className="fa-solid fa-screwdriver-wrench"></i> Projects </h1>
             <div className="lg:flex lg:flex-col lg:gap-8">
                 {projects.map((project, index) => (

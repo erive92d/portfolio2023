@@ -27,7 +27,6 @@ export default function AboutNew() {
                 </div>
             </div>
 
-
         </motion.div >
     )
 }
