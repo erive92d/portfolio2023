@@ -1,6 +1,7 @@
 import './App.css'
 import Footer from './pages/Footer'
 import Navigation from './components/Navigation'
+
 import { Routes, Route } from "react-router-dom";
 import AboutNew from './pages/About'
 import Projects from './pages/Projects'

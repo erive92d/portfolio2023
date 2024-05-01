@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
 
     return (
-        <div className="navbar flex justify-between border-b-2 text-gray-300">
+        <div className="navbar flex justify-between border-b-2 text-gray-300 px-10">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
