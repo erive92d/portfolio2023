@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import family from "../utils/images/family.jpg"
 import { motion } from "framer-motion"
 export default function AboutNew() {
 
