@@ -2,9 +2,15 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    colors: {
+      "bg-custom-cyan": "#3aafa9",
+      "custom-black": "#17252a",
+      "custom-dark-cyan": "#2b7a78",
+      "custom-off-white": "#def2f1",
+      "custom-white": "#feffff",
+    },
   },
-  theme: false,
+
   // eslint-disable-next-line no-undef
   plugins: [require("daisyui")],
 };

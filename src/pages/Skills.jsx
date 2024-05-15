@@ -9,6 +9,7 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { SiPrisma } from "react-icons/si";
 
 import { fadeInAnimationVariants } from '../utils/helpers'
+import PageContent from '../components/PageContent'
 export default function Skills() {
 
   const items = [
@@ -61,27 +62,24 @@ export default function Skills() {
   ]
 
 
-
   return (
-    <div id="skills" className="min-h-screen flex flex-col justify-center items-center">
-      <h1 className="font-bold text-2xl w-full lg:text-4xl text-center py-6 "><i className="fa-solid fa-screwdriver-wrench"></i> Skills </h1>
-      <div className='flex flex-wrap justify-center'>
+    <div id="skills" className="min-h-screen bg-custom-off-white text-custom-black flex flex-col justify-center items-center">
+      {/* <h1 className="font-bold text-5xl w-full lg:text-4xl text-center py-12 "> Skills </h1> */}
+      <PageContent header={"Skills"}> 
         {items.map((item, index) => (
-          <motion.div
-            variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            custom={index}
-            key={index} className={`w-1/3 flex flex-col glass ${item.color} bg-gray-700  p-4 items-center justify-center m-3 lg:w-1/5 lg:p-10 hover:scale-110 duration-100 hover:shadow-xl hover:shadow-cyan-500`}>
-            <p className='text-5xl'>{item.icon}</p>
-            <p className='font-thin'>{item.title}</p>
-          </motion.div>
-        ))}
-      </div>
-
-
-
+            <motion.div
+              variants={fadeInAnimationVariants}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              custom={index}
+              key={index} className={`w-1/4 flex flex-col glass ${item.color} bg-gray-700  p-4 items-center justify-center m-3 lg:w-1/5 lg:p-10 hover:scale-110 duration-100 hover:shadow-xl  hover:bg-bg-custom-cyan`}>
+              <p className='text-5xl'>{item.icon}</p>
+              <p className='font-thin'>{item.title}</p>
+            </motion.div>
+          ))}
+      </PageContent>
+    
     </div>
   )
 }
