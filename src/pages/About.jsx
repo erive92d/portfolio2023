@@ -1,6 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion"
+
+
 export default function AboutNew() {
+
 
     const biograpy = " Hello! My name is Deorren, and I'm a Full-Stack Web Developer based in San Francisco, Bay Area. I have a passion for developing dynamic and engaging web applications using the latest technologies and tools. When I'm not coding, I enjoy staying active and spending time outdoors. I'm an avid basketball player and love to hit the court whenever I can. I also enjoy riding my mountain bike and exploring the beautiful trails in my area."
 
@@ -9,17 +12,21 @@ export default function AboutNew() {
             id="#about"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            // viewport={{ once: true }}
-            className="min-h-screen flex flex-col justify-center items-center
-             bg-gradient-to-b from-20% to-50%  from-cyan-700 to-black"
-
+            viewport={{ once: true }}
+            className="min-h-screen  lg:w-3/4 lg:mx-auto flex flex-col justify-center items-center
+            "
         >
-            <div className="px-4 flex flex-col lg:flex-row gap-10 justify-around lg:items-center  ">
-                <div className="lg:w-1/4">
-                    <h1 className="text-4xl font-bold">Deorren Erive</h1>
-                    <p className="italic font-light">Full-Stack Web Developer</p>
+            <div className="px-4 flex flex-col  gap-10 justify-around lg:items-center  ">
+                <div className=" text-center">
+                    <h1 className="text-3xl lg:text-7xl font-bold">
+                        Deorren 
+                        <span className="text-custom-black">
+                            Erive
+                        </span>
+                    </h1>
+                    <p className=" font-light">Web Developer</p>
                 </div>
-                <div className="lg:w-1/3 ">
+                <div className="lg:w-1/2 text-sm lg:text-base  text-custom-black font-bold">
                     {biograpy.split('').map((char, index) => (
                         <motion.span
                             key={index}
