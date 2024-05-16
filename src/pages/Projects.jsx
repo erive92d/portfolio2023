@@ -1,6 +1,7 @@
 import projects from "../utils/projects"
 import { motion } from "framer-motion"
 import { fadeInAnimationVariants } from "../utils/helpers"
+import PageContent from "../components/PageContent"
 export default function Projects() {
 
 
@@ -10,7 +11,7 @@ export default function Projects() {
         initial="hidden"
         whileInView="visible"
             id="projects">
-            <h1 className="font-bold text-2xl lg:text-5xl rounded text-center py-12"> Projects </h1>
+            <PageContent header={"Projects"}>
             <div className="lg:w-3/4 w-96 mx-auto lg:flex lg:flex-col  lg:gap-8">
                 {projects.map((project, index) => (
                     <motion.div key={index}
@@ -21,7 +22,7 @@ export default function Projects() {
                         custom={index}
                         className=" my-4 w-96 lg:w-full  ">
                         <div className="flex flex-col lg:flex-row lg:justify-between gap-8 ">
-                            <figure className="lg:w-1/2 ">
+                            <figure className="lg:w-1/2">
                                 <img src={project.src} alt="pic" className="rounded-lg" />
                             </figure>
                             <div className="flex flex-col justify-center text-center lg:w-1/3 gap-8">
@@ -44,6 +45,8 @@ export default function Projects() {
                 ))}
             </div>
 
+            </PageContent>
+            
         </motion.div>
     )
 }
