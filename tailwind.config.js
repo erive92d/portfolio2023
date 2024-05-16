@@ -10,7 +10,6 @@ export default {
       "custom-white": "#feffff",
     },
   },
-
   // eslint-disable-next-line no-undef
   plugins: [require("daisyui")],
 };

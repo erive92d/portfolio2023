@@ -66,6 +66,7 @@ export default function Skills() {
     <div id="skills" className="min-h-screen bg-custom-off-white text-custom-black flex flex-col justify-center items-center">
       {/* <h1 className="font-bold text-5xl w-full lg:text-4xl text-center py-12 "> Skills </h1> */}
       <PageContent header={"Skills"}> 
+      <div className='flex flex-wrap justify-center'>
         {items.map((item, index) => (
             <motion.div
               variants={fadeInAnimationVariants}
@@ -73,11 +74,13 @@ export default function Skills() {
               whileInView="animate"
               viewport={{ once: true }}
               custom={index}
-              key={index} className={`w-1/4 flex flex-col glass ${item.color} bg-gray-700  p-4 items-center justify-center m-3 lg:w-1/5 lg:p-10 hover:scale-110 duration-100 hover:shadow-xl  hover:bg-bg-custom-cyan`}>
+              key={index} 
+              className={`w-1/4 flex flex-col glass bg-bg-custom-cyan text-custom-black bg-gray-700  p-4 items-center justify-center m-3 lg:w-1/5 lg:p-10 hover:scale-110 duration-100 hover:shadow-xl  `}>
               <p className='text-5xl'>{item.icon}</p>
               <p className='font-thin'>{item.title}</p>
             </motion.div>
           ))}
+          </div>
       </PageContent>
     
     </div>
