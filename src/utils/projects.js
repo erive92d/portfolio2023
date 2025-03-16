@@ -19,13 +19,13 @@ const projectData = [
     tech: "React, Vite, Typescript, TailwindCSS",
   },
   {
-    title: "Sahara E-commerce",
-    src: "./ecom.png",
+    title: "Target Clone",
+    src: "./targetClone.png",
     description:
       "Your one-stop destination for all your shopping needs. Discover a seamless online shopping experience like never before. With our sleek and intuitive interface, browsing through a wide range of products has never been easier",
-    git: "https://github.com/erive92d/fake-store",
-    link: "https://sahara-store.herokuapp.com/",
-    tech: "Tailwind, NodeJs, Express, React",
+    git: "https://github.com/erive92d/target-clone",
+    link: "https://target-clone.vercel.app/",
+    tech: "NextJS, Typescript, DaisyUI, Tailwind",
   },
   {
     title: "Booksearch Engine",

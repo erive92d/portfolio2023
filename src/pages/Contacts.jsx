@@ -18,11 +18,11 @@ const Contact = () => {
 
     return (
         <motion.div
-             id="contact" 
-             className='min-h-screen bg-custom-black flex flex-col justify-center items-center md:w-full md:flex-col'
-             >
-                <PageContent header={"Contact Me"}>
-                <div >
+            id="contact"
+            className='min-h-screen bg-custom-white text-custom-black  flex flex-col justify-center items-center md:w-full md:flex-col'
+        >
+            <PageContent header={"Contact Me"}>
+                <div className=''>
                     <form className="w-96 md:w-96 md:p-2 p-6  " onSubmit={handleSubmit}>
                         <div className="mb-4 ">
                             <label className="block text-white text-sm font-bold mb-2" htmlFor="subject">
@@ -55,16 +55,16 @@ const Contact = () => {
                                 Send
                             </button>
                             or
-                           
-                                <a className="rounded text-xl text-white font-bold py-2" target='__blank'  href="https://www.linkedin.com/in/deorren-erive-1aa581236/">
-                                    <FaLinkedinIn/>
-                                </a>
-                         
+
+                            <a className="rounded text-xl text-white font-bold py-2" target='__blank' href="https://www.linkedin.com/in/deorren-erive-1aa581236/">
+                                <FaLinkedinIn />
+                            </a>
+
                         </div>
                     </form>
                 </div>
-                </PageContent>
-               
+            </PageContent>
+
         </motion.div>
 
     );
